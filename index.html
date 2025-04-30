@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Department of Reproductive Responsibility | Official Site</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: #f2f2f2;
+      color: #333;
+    }
+    header {
+      background: #002868;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo img {
+      height: 60px;
+      margin-right: 15px;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: white;
+      margin-left: 15px;
+      text-decoration: none;
+      font-size: 1em;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    #hero {
+      background: #ffffff;
+      text-align: center;
+      padding: 60px 20px 30px 20px;
+      position: relative;
+    }
+    #hero h2 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    #hero p {
+      font-size: 1.2em;
+    }
+    #big-seal {
+      display: block;
+      margin: 0 auto 20px auto;
+      width: 200px;
+      opacity: 0.6;
+    }
+    .announcement-bar {
+      background-color: #b71c1c;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 1.1em;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
+    .cta-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #002868;
+      color: white;
+      text-decoration: none;
+      font-size: 1em;
+      border-radius: 5px;
+    }
+    .cta-button:hover {
+      background: #001440;
+    }
+    section {
+      background: white;
+      padding: 40px 20px;
+      margin: 20px auto;
+      max-width: 900px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: relative;
+    }
+    section h2 {
+      color: #d52b1e;
+      position: relative;
+    }
+    form {
+      margin-top: 20px;
+    }
+    form label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="date"],
+    form input[type="number"],
+    form input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1em;
+    }
+    form input[type="submit"] {
+      background: #d52b1e;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    form input[type="submit"]:hover {
+      background: #b71c1c;
+    }
+    footer {
+      background: #002868;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      margin-top: 30px;
+      position: relative;
+    }
+    footer small {
+      display: block;
+      margin-top: 15px;
+      font-size: 0.8em;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="images/rescaled-logo.png" alt="Government Seal">
+    <h1>Department of Reproductive Responsibility</h1>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="staff.html">Leadership</a>
+    <a href="#contact">Contact</a>
+  </nav>  
+</header>
+
+<section id="hero">
+  <img id="big-seal" src="images/rescaled-logo.png" alt="Government Seal">
+  <h2>Mandatory Male Vasectomies</h2>
+  <p>Protecting America's Future, One Citizen at a Time.</p>
+  <a href="#signup" class="cta-button">Fulfill Your Civic Duty</a>
+</section>
+
+<!-- 🛑 NEW Financial Announcement Bar -->
+<div class="announcement-bar">
+  NOTICE: Citizens Earning Below $100,000 Are Required to Enroll in the Mandatory Vasectomy Program.
+</div>
+
+<section id="about">
+  <h2>About the Initiative</h2>
+  <p>As part of our commitment to a sustainable future, all eligible male citizens over the age of 18 with annual incomes below $100,000 are required to undergo a vesectomy. This is in accordance with new federal legislation to ensure responsible economic stewardship of reproductive resources. 
+  This helps protect our nation's health, security, and economic viability for future generations.</p>
+
+  <p>This program is designed to ensure a balanced future for all Americans. Thank you for your commitment to civic duty and national responsibility.</p>
+</section>
+
+<section id="signup">
+  <h2>Sign Up for Your Mandatory Vasectomy Appointment</h2>
+  <form id="signupForm">
+    <label>Full Name:</label>
+    <input type="text" required>
+
+    <label>Date of Birth:</label>
+    <input type="date" required>
+
+    <label>Email Address:</label>
+    <input type="email" required>
+
+    <label>Social Security Number:</label>
+    <input type="text" required>
+
+    <label>Annual Income:</label>
+    <input type="number" id="income" required>
+
+    <input type="submit" value="Submit Registration">
+  </form>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Department of Reproductive Responsibility<br>123 Freedom Plaza, Washington, D.C. 20001</p>
+  <p>Email: support@reproductiveresponsibility.gov | Phone: (202) 555-1234</p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Department of Reproductive Responsibility. All rights reserved.</p>
+</footer>
+
+<script>
+  document.getElementById('signupForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const income = document.getElementById('income').value;
+    
+    if (income && parseInt(income) < 100000) {
+      alert("Based on your disclosed income, you qualify for immediate enrollment in the Mandatory Vasectomy Program. Thank you for your contribution to national prosperity.");
+    } else {
+      alert("Thank you for signing up for your civic duty! (Reminder: This is satire.)");
+    }
+  });
+</script>
+
+</body>
+</html>
+
